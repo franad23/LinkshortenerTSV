@@ -101,7 +101,7 @@ body {
 .linkShortedCounter{
   width: 40px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color: #ffffffde;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,4 +141,20 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.rrssIcon {
+  width: 25px;
+  filter: invert(99%) sepia(77%) saturate(2%) hue-rotate(98deg) brightness(103%) contrast(101%);
+}
+
+.rrssIcon:hover {
+  cursor: pointer;
+  filter: invert(0%) sepia(77%) saturate(2045%) hue-rotate(334deg) brightness(102%) contrast(105%);
+}
+
+.rrssIconContainer{
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

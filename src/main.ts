@@ -13,14 +13,20 @@ if (btnQuery) {
 
 formShortLink?.addEventListener('submit', (e) => {
   e.preventDefault();
-  btnIsLoading = true; // Establece btnIsLoading a true cuando se envía el formulario
+  btnIsLoading = true; 
+  const formElement = e.currentTarget as HTMLFormElement;
+  const inputElement = formElement.elements[0] as HTMLInputElement;
+  const inputValue = inputElement.value;
+  console.log(inputValue);
+
   if (btnQuery) {
-    handleShortButton(btnQuery as HTMLButtonElement, "Short!", btnIsLoading); // Actualiza el botón con btnIsLoading = true
+    handleShortButton(btnQuery as HTMLButtonElement, "Short!", btnIsLoading); 
   }
   setTimeout(() => {
-    btnIsLoading = false; // Establece btnIsLoading a false después de 3 segundos
+    btnIsLoading = false; 
     if (btnQuery) {
-      handleShortButton(btnQuery as HTMLButtonElement, "Short!", btnIsLoading); // Actualiza el botón con btnIsLoading = false
+      handleShortButton(btnQuery as HTMLButtonElement, "Short!", btnIsLoading);
     }
   }, 3000);
+  
 });
