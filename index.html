@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbarContainer">
+      <section class="titleNavContainer">
+        <img src="./src/typescript.svg" alt="typescript logo">
+        <h1>TSV Link Shortener</h1>
+      </section>
+    </nav>
+  </header>
+  <main class="mainContainer">
+    <section class="sectionContainer">
+      <p class="textIntro">
+        This website is built using TS Vanilla with Vite for the frontend and Node.js, Express, and MongoDB for the
+        backend. It's dedicated to showcasing skills specifically in TypeScript Vanilla, demonstrating proficiency in
+        both frontend and backend development using TypeScript.
+      </p>
+    </section>
+    <section class="sectionContainer">
+      <form action="" class="formLinkContainer" id="formShortLink">
+        <input type="text" class="inputLink">
+        <button class="btnShort" id="btnShort"></button>
+      </form>
+
+      
+    </section>
+    <section class="sectionContainer linksShortedAndCounterContainer">
+      <div class="linkShortedContainer">
+        <p>Your Link Shorted: </p>
+
+      </div>
+      <div class="linksShortedCounterContainer">
+        <p>Links Shorted: </p>
+        <div class="linkShortedCounter">
+          50
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <footer class="footerContainer">
+    <section class="sectionContainerFooter">
+      <div>
+        <p>Made with ❤️ by Franco</p>
+      </div>
+      <div>
+        icon
+      </div>
+    </section>
+  </footer>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
