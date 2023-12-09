@@ -158,3 +158,8 @@ body {
   align-items: center;
   gap: 10px;
 }
+
+.linkShortedText:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

@@ -1,8 +1,9 @@
 import axios from "axios";
 
-export const shortUrl = async (originalUrl: string) => {
+export const shortUrl = async (originalUrl: string, continueUrl:boolean) => {
   return await axios.post("http://localhost:3000/api/shorturl", {
-    originalUrl
+    originalUrl,
+    continueUrl
   })
 }
 
