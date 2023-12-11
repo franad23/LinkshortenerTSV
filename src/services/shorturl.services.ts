@@ -10,3 +10,9 @@ export const shortUrl = async (originalUrl: string, continueUrl:boolean) => {
 export const shortUrlCounter = async () => {
   return await axios.get("http://localhost:3000/api/urlshortcount")
 }
+
+export const verifyUrl = async (shortedUrl: string) => {
+  return await axios.post("http://localhost:3000/api/verify", {
+    shortedUrl
+  })
+}
