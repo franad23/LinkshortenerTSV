@@ -22,7 +22,6 @@ if (bodyContainer) {
   verifyUrlIfExists(bodyContainer);
 } 
 
-
 if (counterContainer) {
   urlCounter(counterContainer);
 }
@@ -56,7 +55,7 @@ formShortLink?.addEventListener('submit', async (e) => {
       btnIsLoading = false; 
       handleShortButton(btnQuery as HTMLButtonElement, "Short!", btnIsLoading);
       formElement.reset();
-    } catch (error: unknown) {
+    } catch (error: any) {
       if (error.response.status == 404 || error.response.status == 500) {
         continueUrl = confirm("It seems that the URL doesn't exist. Continue anyways?");
         if (continueUrl) {
